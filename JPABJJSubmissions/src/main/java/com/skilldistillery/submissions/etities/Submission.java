@@ -1,3 +1,4 @@
+
 package com.skilldistillery.submissions.etities;
 
 import javax.persistence.Entity;
