@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+	background-color: #F8FAF0;
+	padding-left: 75px;
+	padding-top:  45px;
+	font: 20px Didot;
+	font-weight: bold;
+	color: black;
+}
+a:link {
+  color: #5F8FA0;
+}
+a:visited {
+  color: #5F8FA0;
+}
