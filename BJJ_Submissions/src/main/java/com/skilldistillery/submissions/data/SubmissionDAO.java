@@ -7,14 +7,16 @@ import com.skilldistillery.submissions.etities.Submission;
 public interface SubmissionDAO {
 	
 	
-		public Submission findById(int id);
+		
 		
 		public Submission updateSubmission(int id, Submission submission);
 		
-		public Boolean deleteSubmission(int id);
+		public void deleteSubmission(Submission s);
 	
 		public Submission createSubmission(Submission submission);
 
 		public List<Submission> displayAll();
+
+		public Submission findById(Integer sid);
 		
 }

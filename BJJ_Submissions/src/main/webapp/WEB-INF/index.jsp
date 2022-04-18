@@ -1,35 +1,46 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-    
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Homepage</title>
+<jsp:include page="bootstrapHead.jsp"/>
 </head>
 
 <body>
-  <a href="createPage.do" ><button name="create" type="submit">Add a submission</button></a>
-  <h1>BJJ Submission Database</h1>
-   
-    <table class="table table-striped">
-			<thead class="table-dark">
+	<a href="createPage.do"><button name="create" type="submit">Add
+			a submission</button></a>
+	<h1>BJJ Submission Database</h1>
+	
+	<form action="getSubById.do" method="GET">
+			 Submission ID: <input type="text" name="sid" /> <input type="submit"
+				 value="Find Submission" />
+		</form>
+
+	<table class="table table-striped">
+		<thead class="table-dark">
+			<tr>
+				<th>Name</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach var="s" items="${subs}">
 				<tr>
-					<th>Name</th>
-					<th>Type</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach var="s" items="${subs}">
-					<tr>
-						<td><a href="getSubById.do?sid=${s.id}">${s.name}</a></td>
-					
+					<td><a href="getSubById.do?sid=${s.id}">${s.name}</a></td>
+
 					<td>${s.type}</td>
-					</tr>
-					
-				</c:forEach>
-			</tbody>
-		</table>
+					<td>
+						
+					</td>
+
+				</tr>
+
+			</c:forEach>
+		</tbody>
+	</table>
 </body>
 </html>

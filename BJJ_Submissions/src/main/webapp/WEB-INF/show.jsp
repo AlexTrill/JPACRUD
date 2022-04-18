@@ -15,7 +15,21 @@
 
 	<div>
 		<h5>${subs.name}(${subs.type})</h5>
-		<p>${film.aka}</p>
+		<p>${subs.aka}</p>
+		<p>${subs.id}</p>
+		
+		<form action ="deleteSubmission.do" method = "POST">
+						<input type="hidden" value="${subs.id}" name = "submission"/>
+						<input type="submit" value="Delete"/>
+						</form>
+						
+		<form action ="update.do" method = "POST">
+						<input type="hidden" value="${subs.id}" name = "submission"/>
+						<input type="submit" value="Update"/>
+						</form>
+	
+		
+		
 	</div>
 </div>
 

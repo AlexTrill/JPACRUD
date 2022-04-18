@@ -19,12 +19,13 @@ public class SubmissionJpaImpl implements SubmissionDAO {
 	@PersistenceContext
 	private EntityManager em;
 	
-	@Override
-	public Submission findById(int id) {
-		
-		return em.find(Submission.class, id);
-	}
+	
 
+	@Override
+	public Submission findById(Integer sid) {
+		return em.find(Submission.class, sid);
+
+	}
 	@Override
 	public Submission createSubmission(Submission submission) {
 		
@@ -57,12 +58,7 @@ public class SubmissionJpaImpl implements SubmissionDAO {
 		return submission;
 	}
 
-	@Override
-	public Boolean deleteSubmission(int id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 	@Override
 	public List<Submission> displayAll() {
 		
@@ -70,6 +66,17 @@ public class SubmissionJpaImpl implements SubmissionDAO {
 		
 		return em.createQuery(jpql, Submission.class).getResultList();
 	}
+
+	@Override
+	public void deleteSubmission(Submission s) {
+
+		System.out.println("deleting");
+		
+		em.remove(s);
+		em.flush();
+	}
+
+	
 
 	
 }
