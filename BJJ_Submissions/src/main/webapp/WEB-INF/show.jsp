@@ -23,6 +23,20 @@
 				<p>Also Known As: ${subs.aka}</p>
 
 			</c:if>
+			<c:if test="${not empty subs.executedFrom}">
+				<p>Positions commonly executed from: ${subs.executedFrom}</p>
+
+			</c:if>
+			<c:if test="${not empty subs.specialists}">
+				<p>Specialists: ${subs.specialists}</p>
+
+			</c:if>
+			<c:if test="${not empty subs.giRequired}">
+				<p>Gi required: ${subs.giRequired}</p>
+
+			</c:if>
+			
+			
 			
 	<div>
 			<c:if test="${not empty subs.image}">
