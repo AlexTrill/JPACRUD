@@ -29,6 +29,11 @@ public class Submission {
 	@Column(name = "also_known_as")
 	private String aka;
 	
+	private String tutorial;
+	
+	private String image;
+	
+	
 
 	public Submission() {
 		super();
@@ -53,7 +58,7 @@ public class Submission {
 	@Override
 	public String toString() {
 		return "Submission [id=" + id + ", name=" + name + ", type=" + type + ", giRequired=" + giRequired
-				+ ", commonPositions=" + executedFrom + ", specialists=" + specialists + ", aka=" + aka + "]";
+				+ ", executedFrom=" + executedFrom + ", specialists=" + specialists + ", aka=" + aka + "]";
 	}
 
 	public String getType() {
@@ -95,6 +100,22 @@ public class Submission {
 
 	public void setExecutedFrom(String executedFrom) {
 		this.executedFrom = executedFrom;
+	}
+
+	public String getTutorial() {
+		return tutorial;
+	}
+
+	public void setTutorial(String tutorial) {
+		this.tutorial = tutorial;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 }

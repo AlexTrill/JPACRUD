@@ -50,6 +50,8 @@ public class SubmissionJpaImpl implements SubmissionDAO {
 		updatedSub.setExecutedFrom(submission.getExecutedFrom());
 		updatedSub.setSpecialists(submission.getSpecialists());
 		updatedSub.setAka(submission.getAka());
+		updatedSub.setTutorial(submission.getTutorial());
+		updatedSub.setImage(submission.getImage());
 		
 		
 		

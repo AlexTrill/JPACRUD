@@ -25,9 +25,9 @@
 			</div>
 				<label for="giRequired">Gi required?: </label>
 					<br>
-					No: <input type="radio" name="giRequired" value="Yes" ${s.giRequired == 'Yes' ? 'checked' : ''}/>
+					Yes: <input type="radio" name="giRequired" value="Yes" ${s.giRequired == 'Yes' ? 'checked' : ''}/>
 					<br>
-            		Yes: <input type="radio" name="giRequired" value="No" ${s.giRequired == 'No' ? 'checked' : ''}/>
+            		No: <input type="radio" name="giRequired" value="No" ${s.giRequired == 'No' ? 'checked' : ''}/>
 
 			<div class="form-group">
 				<label for="executedFrom">Positions Commonly Executed From: </label> <input type="text"
