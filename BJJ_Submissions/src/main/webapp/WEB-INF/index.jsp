@@ -14,7 +14,7 @@
 	<a href="createPage.do"><button name="create" type="submit">Add
 			a submission</button></a>
 	<h1>Brazilian Jiu-Jitsu Submission Database</h1>
-<p>"Jiu-jitsu is the gentle art. It's the art where a small man or woman is going to prove to you, no matter how strong you are, no matter how mad you get, that you're going to have to accept defeat. That's what Brazilian Jiu-jitsu is."
+<p class="quote"> "Jiu-jitsu is the gentle art. It's the art where a small man or woman is going to prove to you, no matter how strong you are, no matter how mad you get, that you're going to have to accept defeat. That's what Brazilian Jiu-jitsu is."
 
 - Saulo Ribeiro.</p>
 	

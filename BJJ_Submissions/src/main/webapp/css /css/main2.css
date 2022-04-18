@@ -17,3 +17,9 @@ a:visited {
 .warning {
 	color: red;
 }
+.quote{
+	
+	font: FreeMono New; 
+	font-weight: lighter;
+	color: pink;
+}
