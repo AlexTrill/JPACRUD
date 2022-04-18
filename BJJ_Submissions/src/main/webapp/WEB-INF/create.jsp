@@ -31,16 +31,16 @@
 
 			</div>
 			<div class="form-group">
-				<label for="executedFrom">executedFrom: </label> <input type="text"
+				<label for="executedFrom">Positions Commonly Executed From: </label> <input type="text"
 					name="executedFrom" id="executedFrom" class="form-control" required />
 			</div>
 
 			<div class="form-group">
-				<label for="specialists">specialists: </label> <input type="text"
+				<label for="specialists">Specialists Of This Submission: </label> <input type="text"
 					name="specialists" id="specialists" class="form-control" required />
 			</div>
 			<div class="form-group">
-				<label for="aka">aka: </label> <input type="text" name="aka"
+				<label for="aka">Also Known As: </label> <input type="text" name="aka"
 					id="aka" class="form-control" required />
 			</div>
 

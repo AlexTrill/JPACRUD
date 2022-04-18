@@ -13,7 +13,7 @@
 <body>
 	<a href="createPage.do"><button name="create" type="submit">Add
 			a submission</button></a>
-	<h1>BJJ Submission Database</h1>
+	<h1>Brazilian Jiu-Jitsu Submissions</h1>
 	
 	<form action="getSubById.do" method="GET">
 			 Submission ID: <input type="text" name="sid" /> <input type="submit"
